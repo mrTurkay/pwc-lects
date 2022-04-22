@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Formik, useFormik } from "formik";
 
 import * as yup from "yup";
+import Layout from "../layout";
 
 const validationSchema = yup.object({
   email: yup
@@ -31,7 +32,7 @@ const ArticleFormPage = () => {
   console.log({ formik });
 
   return (
-    <>
+    <Layout pageName="Article Form">
       <Typography variant="h2">Article Form Page</Typography>
 
       <form onSubmit={formik.handleSubmit}>
@@ -63,7 +64,7 @@ const ArticleFormPage = () => {
       <Link to="/">
         <Button>Articles</Button>
       </Link>
-    </>
+    </Layout>
   );
 };
 
