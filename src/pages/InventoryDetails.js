@@ -1,6 +1,6 @@
-import Layout from "../layout";
+import Layout from "../layout"
 const InventoryDetails = () => {
-  return <Layout pageName={"InventoryDetails"}>InventoryDetails</Layout>;
+  return <Layout pageName={"InventoryDetails"}>InventoryDetails</Layout>
 };
 
-export default InventoryDetails;
+export default InventoryDetails
